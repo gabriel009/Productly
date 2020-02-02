@@ -47,14 +47,23 @@
 
 .container-list {
     display: inline-flex;
+    width: 400px;
+    margin: 15px 0;
 }
 
 .container-nav {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container-list li {
     margin: auto;
+}
+
+.button-nav {
+    display: flex;
+    margin: auto
 }
 
 .container-list li a {
@@ -205,6 +214,15 @@
     margin: 54px 0 34px;
 }
 
+.box-icon-color {
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .box-text {
     width: 240px;
@@ -212,9 +230,9 @@
 
 .box-icon {
     display: flex;
-    width: 50px;
-    height: 50px;
-    border-radius: 19px;
+    width: 35px;
+    height: 35px;
+    border-radius: 12px;
     margin-bottom: 30px;
     justify-content: center;
     align-items: center
@@ -678,6 +696,11 @@
         margin-top: 100px;
     }
 
+    .box-icon {
+        width: 50px;
+        height: 35px;
+    }
+
     .box-article {
         margin: 50px auto;
     }
@@ -695,10 +718,6 @@
 
     .container-header {
         justify-content: center;
-    }
-
-    .container-list {
-        margin-top: 20px;
     }
 
     .box-text {
@@ -834,11 +853,13 @@
 
     .box-text {
         width: 145px;
-        margin: 20px auto;
         text-align: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
+    }
+
+    .box-icon-color {
+        margin: 0 auto;
     }
 
     .container-section {
@@ -852,9 +873,9 @@
 
     .box-icon {
         margin: auto;
-        width: 100px;
-        height: 40px;
-        border-radius: 15px;
+        width: 70px;
+        height: 30px;
+        border-radius: 8px;
     }
 
     p.box-paragrap-max {
@@ -864,7 +885,6 @@
     .main-container-balloon {
         position: relative;
         overflow: hidden;
-        width: 100vw;
     }
 
     .container-article {
@@ -931,5 +951,14 @@
         margin: 10px auto;
         font-size: 18px;
         width: 200px;
+    }
+
+    .devs {
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .devs span {
+        margin: 0 20px;
     }
 }
